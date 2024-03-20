@@ -1,0 +1,85 @@
+@use 'partial';
+@font-face {
+     font-family: "Britanic";
+    src: url "fonts/BRITANIC.TTF";
+}   
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: partial.$font;
+    background-color: partial.$bg-color;
+
+        p{
+            font-size: 16px;
+            color: partial.$text-color;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-weight: 600;
+            color: partial.$text-color;
+        }
+}
+
+
+header {  
+    nav{
+        background-color: partial.$bg-color;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+}
+
+
+nav {
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+}
+
+    a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+}
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: partial.$primary-color;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+// Tilpasning til mindre skærme
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
