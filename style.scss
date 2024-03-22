@@ -37,44 +37,55 @@ body {
 }
 
 header {  
-    nav{
-        background-color: partial.$bg-color;
-        padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+
+        nav{
+            background-color: partial.$bg-color;
+            padding: 10px;
     
-        
-        img {
-            max-width: 70px;
-            max-height: 70px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            display: block;
-        }
-
-        a {
-            color: partial.$text-color;
-            text-decoration: none;
-            font-weight: bold;
-
-            &:hover {
-                color: partial.$nav-color;
+            img {
+                max-width: 70px;
+                max-height: 70px;
             }
-        }
-    } 
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                display: block;
+            }
+
+            a {
+                color: partial.$text-color;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    color: partial.$nav-color;
+                }
+            }
+        } 
 }
 
-section {
-    padding: 20px;
-
-    div {
-        background-color: lighten($color: partial.$primary-color, $amount: 20%);
-    }
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+        section{
+            margin-left: 5%;
+    
+            img {
+            max-width: 30%;
+            max-height: auto;
+            }
+        }
 }
 
 footer {

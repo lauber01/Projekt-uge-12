@@ -28,6 +28,11 @@ body h2, body h3, body h4, body h5, body h6 {
   color: #536A4B;
 }
 
+header {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+}
 header nav {
   background-color: #FCF6EA;
   padding: 10px;
@@ -53,11 +58,18 @@ header nav a:hover {
   color: #A0B997;
 }
 
-section {
-  padding: 20px;
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-section div {
-  background-color: #d8e2d4;
+main section {
+  margin-left: 5%;
+}
+main section img {
+  max-width: 30%;
+  max-height: auto;
 }
 
 footer {
