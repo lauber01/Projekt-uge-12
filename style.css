@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variabler*/
 body {
   box-sizing: border-box;
@@ -64,12 +65,18 @@ main {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-main section {
+main #section-kost {
   margin-left: 5%;
 }
-main section img {
+main #section-kost img {
   max-width: 30%;
   max-height: auto;
+}
+main #section-træning {
+  margin-left: 5%;
+}
+main #section-træning img {
+  max-width: 45%;
 }
 
 footer {

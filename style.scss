@@ -78,13 +78,19 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     
-        section{
+        #section-kost{
             margin-left: 5%;
-    
-            img {
-            max-width: 30%;
-            max-height: auto;
-            }
+                img {
+                    max-width: 30%;
+                    max-height: auto;
+                }
+        }
+
+        #section-træning{
+            margin-left: 5%;
+                img{
+                    max-width: 45%;                
+                }
         }
 }
 
