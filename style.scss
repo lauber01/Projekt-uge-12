@@ -44,20 +44,23 @@ header {
         nav{
             background-color: partial.$bg-color;
             padding: 10px;
-    
-            img {
-                max-width: 70px;
-                max-height: 70px;
-            }
-
+            
             ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            img {
+                margin-right: auto;
+                max-width: 70px;
+                max-height: 70px;
             }
 
             li {
-                display: block;
+                margin-left: auto;
             }
 
             a {
@@ -70,7 +73,48 @@ header {
                 }
             }
         } 
+
 }
+
+#burger-toggle {
+    display: none;
+}
+
+/* Burgermenu-ikon */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Vis burgermenu-ikon, når skærmstørrelsen er lille nok */
+@media screen and (max-width: 768px) {
+    .burger-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #burger-toggle:checked ~ nav ul {
+        display: flex;
+    }
+}
+
 
 main {
     padding-left: 10%;
